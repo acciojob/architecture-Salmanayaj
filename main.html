@@ -5,42 +5,92 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
+	 <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 1100px;
+            margin: 20px auto;
+        }
+
+        /* Image Container */
+        .imageContainer {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .imageContainer img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        td img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .first-column, .last-column {
+            width: 200px;
+        }
+
+        .middle-column {
+            width: 600px;
+        }
+
+        /* Additional Styling */
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+    </style>
 
 <body>
 	<!-- the entire body must be written by student -->
-	<div class = "imageContainer">
-		<img src = ".image/architecture.jpg" alt = "Architectural image">
-	</div>
+	<div class="container">
+        <!-- Image Container -->
+        <div class="imageContainer">
+            <img src="https://th.bing.com/th/id/OIP.p2cJbzeE6p0GQVrlZOh0PQAAAA?rs=1&pid=ImgDetMain" alt="Architecture Image">
+        </div>
 
-	<table>
-		<thead>
-			<tr>
-				<th>First Column</th>
-				<th>Middle Column</th>
-				<th>Last Column</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td class = "image">
-					<img src = ".image/architecture.jpg">
-				</td>
-				<td class = "text">Architecture feature 1</td>
-				<td class = "image">
-					<img src = "architecture.jpg">
-				</td>
-			</tr>
-			<tr>
-				<td class = "image">
-					<img src = ".image/architecture.jpg">
-				</td>
-				<td class = "text">Architecture feature 2</td>
-				<td class = "image">
-					<img src = ".image/architecture.jpg">
-				</td>
-			</tr>
-		</tbody>
-	</table>
+        <!-- Table Structure -->
+        <table>
+            <tr>
+                <th class="first-column">Image</th>
+                <th class="middle-column">Text Content</th>
+                <th class="last-column">Image</th>
+            </tr>
+            <tr>
+                <td class="first-column"><img src="https://th.bing.com/th/id/OIP.VMUZ_Hu6tJGmT6H5Jz6-PAHaFj?rs=1&pid=ImgDetMain" alt="Image 1"></td>
+                <td class="middle-column">This is some architectural text content. Describe the architecture here.</td>
+                <td class="last-column"><img src="https://sp-ao.shortpixel.ai/client/q_lqip,ret_wait,w_768,h_768/https://starkwoodrealestate.com/wp-content/uploads/2019/12/002-768x768.jpg" alt="Image 2"></td>
+            </tr>
+            <tr>
+                <td class="first-column"><img src="https://inspgr.id/app/uploads/2020/07/architecture-alex-aharon-feature.jpg" alt="Image 3"></td>
+                <td class="middle-column">This is another piece of architectural text content. Provide more details here.</td>
+                <td class="last-column"><img src="https://th.bing.com/th/id/OIP.a5-mrko5z3hVHhmm0z5w0AHaGB?w=1500&h=1221&rs=1&pid=ImgDetMain" alt="Image 4"></td>
+            </tr>
+        </table>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
